@@ -1,9 +1,12 @@
+var mongoose = require('mongoose');
 var express = require('express');
 var partials = require('express-partials');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var util = require('./lib/utility');
+var url = 'mongodb://localhost:27017';
+var db = require('./app/config');
 
 var handler = require('./lib/request-handler');
 
